@@ -6,15 +6,15 @@
 What is Req & Res?
 
 Req -> Http (https) Request Object.
-You can get the request query, params, body, headers and cookies from it.
-You can overwrite any value or add anything there.
-However, overwriting headers or cookies will not affect the output back to the browser. 
+- You can get the request query, params, body, headers and cookies from it.
+- You can overwrite any value or add anything there.
+- However, overwriting headers or cookies will not affect the output back to the browser. 
 
 
 Res -> Http (https) Response Object. 
-The response back to the client browser.
-You can put new cookies value and that will write to the client browser (under cross domain rules)
-Once you res.send() or res.redirect() or res.render(), you cann do it again, otherwise, there will be uncaught error. 
+- The response back to the client browser.
+- You can put new cookies value and that will write to the client browser (under cross domain rules)
+- Once you res.send() or res.redirect() or res.render(), you cann do it again, otherwise, there will be uncaught error. 
 
 For convenient, sometimes I just put values into the req or res objects and pass along to different functions.  That's handy, but in the expense of speed.  Because it may trigger re-creation of the JSON hidden class.  
 
