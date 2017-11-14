@@ -22,6 +22,8 @@ Also, you cannot JSON.stringify req or res objects beacuse of the deeply nested 
 
 So, how's req and res look like?  By default, it looks like that:
 
+**Request Object**
+
 ```js
 req = {
     _startTime     :    Date, 
@@ -51,6 +53,7 @@ req = {
 ```
 
 
+**Response Object**
 
 ```js
 res = {
